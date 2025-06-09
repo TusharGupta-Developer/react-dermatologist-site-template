@@ -1,0 +1,122 @@
+.gallery {
+    background-color: var(--color-bg);
+}
+
+.section__title {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+.gallery__container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.circular-gallery__wrapper {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 3rem;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.circular-gallery__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.circular-gallery__item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+
+.circular-gallery__image {
+    width: 24rem;
+    border-radius: 5%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-gallery__image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .circular-gallery__image {
+        width: 18rem;
+    }
+
+    .gallery-scroll-container {
+        max-width: 18rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .circular-gallery__image {
+        width: 25rem;
+    }
+    
+    .gallery-scroll-container {
+        max-width: 25rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1149px) {
+    .circular-gallery__image {
+        width: 30rem;
+    }
+
+    .gallery-scroll-container {
+        max-width: 30rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .circular-gallery__image {
+        width: 41rem;
+    }
+    
+    .gallery-scroll-container {
+        width: 41rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-controls button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.gallery-controls button:hover {
+    background-color: #555;
+}
+
+/* .container {
+    max-width: 1120px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+} */

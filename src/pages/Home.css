@@ -1,0 +1,161 @@
+/*=============== HOME ===============*/
+.home {
+    /* padding-block-start: 1.5rem; */
+    padding-block-start: 4rem;
+
+}
+
+
+.home__container {
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.home__img {
+    /* width: 220px; */
+    justify-self: center;
+    mask-image: linear-gradient(to bottom, hsla(210, 40%, 16%, 1), 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, hsla(210, 40%, 16%, 1), 60%, transparent 100%);
+
+    width: 500px;
+    object-fit: cover;
+}
+
+.home__name {
+    font-size: var(--font-size-heading-lg);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-primary);
+    word-break: break-word;
+    margin-bottom: .4rem;
+    line-height: 3.5rem;
+}
+
+.home__profession {
+    position: relative;
+    font-size: var(--font-size-body);
+    color: var(--color-text-secondary);
+    /* font-size: 1.4rem; */
+
+}
+
+/* .home__profession::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    height: 3px;
+    width: 35%;
+    background-color: var(--color-text-secondary);
+} */
+
+.home__scroll {
+    color: var(--text-color);
+    display: inline-flex;
+    column-gap: .5rem;
+    align-items: center;
+
+    justify-self: center;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.home__scroll--box {
+    background-color: var(--color-success);
+    height: 32px;
+    width: 32px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.home__scroll-text {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Animate scroll icon */
+
+.home__scroll--box>i {
+
+    animation: scroll-down 3s infinite;
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(.6rem);
+        opacity: 0;
+    }
+
+    /* 0%: transform: translateY(-1rem);: Moves the element up by 1rem.
+opacity: 0;: Makes the element fully transparent.
+
+50%:
+transform: translateY(0);: Moves the element back to its original position.
+opacity: 1;: Makes the element fully opaque.
+
+100%:
+transform: translateY(0.6rem);: Moves the element down by 0.6rem.
+opacity: 0;: Makes the element fully transparent. */
+}
+
+
+@media screen and (min-width: 1150px) {
+    .home__container {
+        grid-template-columns: 375px 350px;
+        gap: 3rem 16rem;
+        padding-top: 3rem;
+        justify-content: center;
+    }
+
+    .home__img {
+        width: 350px;
+    }
+
+    .home__name {
+        /* line-height: 3rem; */
+        line-height: 5rem;
+        /* margin-bottom: 1.5rem; */
+        margin-bottom: .5rem;
+    }
+
+    .home__profession {
+        /* self */
+        /* font-size: var(--h2-font-size); */
+        font-size: var(--font-size-body);
+        /* self */
+    }
+
+    .home__data {
+        align-self: center;
+        /* self */
+        padding-bottom: 0;
+    }
+
+    .home__scroll {
+        /*spans from the first to the last column.*/
+        grid-column: 1 / -1;
+    }
+
+
+}
+
+.home__name {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.home__name.fade-out {
+  opacity: 0;
+}
+

@@ -1,0 +1,44 @@
+.scroll__up {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--color-text-secondary);
+    color: var(--color-bg-light);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+
+    box-shadow: 0 4px 12px hsla(var(--color-text-primary), 30%, 8%, .3);
+    z-index: var(--z-tooltip);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Animation */
+    animation: floatUp 1.5s ease-in-out infinite;
+
+}
+
+.scroll__up:hover {
+    animation-play-state: paused;
+    transform: translateY(-0.5rem);
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-section);
+}
+
+
+/* =========Show Scroll UP=========== */
+.show__scroll {
+    bottom: 3rem;
+}
+
+/* Keyframe for up-down animation */
+@keyframes floatUp {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+    }
+}

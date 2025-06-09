@@ -1,0 +1,123 @@
+/*=============== CONTACT ===============*/
+
+.contact {
+  background-color: var(--color-bg-section);
+}
+
+.contact__container {
+  row-gap: 4rem;
+}
+
+.contact__group,
+.contact__form {
+  gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1.25rem;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  border: 1px solid var(--color-bg-card);
+  border-bottom-width: 0.15rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact__input:focus,
+.contact__input:valid {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-card);
+}
+
+.contact__input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.contact__area {
+  height: 10rem;
+  resize: none;
+}
+
+.contact__button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.contact__social {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.contact__social-link {
+  color: var(--color-text-primary);
+  display: inline-flex;
+  column-gap: 0.25rem;
+  align-items: center;
+  transition: color 0.4s;
+}
+
+.contact__social-link>i {
+  font-size: 1.5rem;
+}
+
+.contact__social-link span {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+}
+
+.contact__social-link:hover {
+  color: var(--color-primary-hover);
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .contact__container {
+    grid-template-columns: 580px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .contact__container {
+    grid-template-columns: 580px;
+    justify-content: center;
+  }
+
+  .contact__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__area {
+    height: 15rem;
+  }
+
+  .contact__button {
+    width: max-content;
+    justify-self: center;
+    margin-top: 1.5rem;
+    padding: 2.1rem;
+  }
+
+  .contact__message {
+    bottom: 4.5rem;
+  }
+
+  .contact__social {
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 5rem;
+  }
+}
