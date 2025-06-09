@@ -14,7 +14,7 @@ const About = () => {
         <div className="about grid">
           <div className="about__content grid">
             <h3 className="info__title">About Me</h3>
-            <p className="about__description">
+            <p className="about__description paragraph-text">
               Hi, I’m a dedicated <span>dermatologist</span> here to support you on your journey to <span>healthy, radiant skin</span>. I offer a caring, expert environment where your concerns are <span>heard, valued, and treated</span> with personalized care. Let’s take the first step toward <span>confidence and glowing skin</span> together.
 
             </p>
@@ -28,7 +28,7 @@ const About = () => {
 
         <div className="about__experience grid">
           <h3 className="info__title">Experience</h3>
-          <ul className="experience__list grid">
+          <ul className="experience__list grid paragraph-text">
             <li>
               <strong>Licensed Dermatologist</strong> — 5+ years providing expert skin care focused on healing, rejuvenation, and patient confidence.
             </li>

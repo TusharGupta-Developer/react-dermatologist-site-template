@@ -51,7 +51,7 @@ function Home() {
             <h1 className={`home__name ${fade ? '' : 'fade-out'}`}>
               {phrases[currentPhraseIndex]}
             </h1>
-            <h4 className="home__profession"> You’re not alone — expert skin care can help you heal, glow, and feel confident in your skin again.</h4>
+            <h4 className="home__profession paragraph-text"> You’re not alone — expert skin care can help you heal, glow, and feel confident in your skin again.</h4>
           </div>
 
 
