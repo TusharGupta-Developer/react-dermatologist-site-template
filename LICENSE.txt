@@ -1,0 +1,47 @@
+React Dermatologist Website Template License
+Copyright © 2025 Tushar Gupta
+
+This license applies to the React-based Dermatologist Website Template created and owned by Tushar Gupta (the "Author").
+
+========================
+1. PERMITTED USE
+========================
+Upon purchase, you (the "Licensee") are granted a non-exclusive, non-transferable license to use this template in accordance with the following terms:
+
+✅ You May:
+- Use the template for a single client or project.
+- Modify the design, layout, images, and code to suit your needs.
+- Use it for commercial purposes (e.g., clinics, professionals, healthcare businesses).
+
+❌ You May NOT:
+- Resell, redistribute, or sublicense the template in its original or modified form.
+- Share the source code with third parties or use it in multiple unrelated client projects without separate licenses.
+- Claim authorship of the original template or design if unmodified.
+
+========================
+2. MULTI-USE / EXTENDED LICENSE
+========================
+To use this template for more than one project or to sell it as a service to multiple clients, an **Extended License** is required. Please contact the author for pricing and permission.
+
+========================
+3. ATTRIBUTION (OPTIONAL)
+========================
+While not required, a small credit such as:
+"Website powered by Tushar Gupta"  
+in the website footer is appreciated.
+
+========================
+4. LIABILITY & WARRANTY
+========================
+This template is provided "as-is" without warranty of any kind. The author shall not be liable for any damages arising out of its use.
+
+========================
+5. CONTACT
+========================
+For extended licenses, support, or custom work, contact:
+
+📧 Email: your-email@example.com  
+🌐 Portfolio: yourwebsite.com  
+🛒 License ID: [Generate unique IDs per sale if you want]
+
+Thank you for respecting the license terms and supporting independent developers!
