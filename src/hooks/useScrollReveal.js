@@ -10,6 +10,7 @@ const useScrollReveal = () => {
             duration: 2000,
             delay: 200,
             reset: false, // set to true if you want it to repeat on scroll
+            // reset: true, // set to true if you want it to repeat on scroll
         });
 
         sr.reveal(".home__data, .about__experience, .skills, .contact__container")
@@ -21,9 +22,10 @@ const useScrollReveal = () => {
         sr.reveal(".work__card, .services__card", { interval: 100 })
 
         sr.reveal('.testimonial__cards', {
-            oorigin: 'bottom',
+            origin: 'bottom',
             distance: '40px',
             duration: 1000,
+            // delay: 200,
             delay: 200,
             interval: 200, // 👈 This staggers the cards
             easing: 'ease-in-out',
@@ -34,7 +36,7 @@ const useScrollReveal = () => {
             origin: 'bottom',
             distance: '40px',
             duration: 1200,
-            delay: 100,
+            delay: 200,
             interval: 150,  // stagger each item by 150ms
             easing: 'ease-in-out',
             reset: false,
@@ -44,7 +46,7 @@ const useScrollReveal = () => {
             origin: 'bottom',
             distance: '30px',
             duration: 1000,
-            interval: 200,  // reveals sections one-by-one
+            interval: 300,  // reveals sections one-by-one
             delay: 200,
             reset: false,
         });
@@ -53,7 +55,8 @@ const useScrollReveal = () => {
             origin: 'bottom',
             distance: '20px',
             duration: 800,
-            delay: 800,
+            // delay: 800,
+            delay: 1000,
             reset: false,
         });
 
