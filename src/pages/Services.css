@@ -33,11 +33,11 @@
   flex-direction: column;
   justify-content: center;
 
-  /* For not copyable or selectable */
+  /* For not copyable or selectable
   user-select: none;
   -webkit-user-select: none;
   /* for Safari */
-  -ms-user-select: none;
+  /*-ms-user-select: none; */
 
 }
 
