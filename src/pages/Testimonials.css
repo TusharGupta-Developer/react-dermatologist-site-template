@@ -10,7 +10,7 @@
 
 .testimonial__subtitle {
     font-size: var(--h2-font-size);
-    font-size: var( --font-size-heading-sm);
+    font-size: var(--font-size-heading-sm);
     margin-bottom: 1.5rem;
     color: var(--first-color);
     text-align: center;
@@ -29,16 +29,19 @@
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* cursor: pointer; */
 }
 
 .testimonial__card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial__image-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 4; /* maintains vertical proportion */
+    aspect-ratio: 3 / 4;
+    /* maintains vertical proportion */
     overflow: hidden;
     border-radius: 0.75rem;
     margin-bottom: 1rem;
@@ -51,7 +54,8 @@
 .testimonial__img {
     height: 100%;
     width: auto;
-    object-fit: contain; /* prevents cropping */
+    object-fit: contain;
+    /* prevents cropping */
     display: block;
 }
 
