@@ -1,6 +1,9 @@
 # Tranquil Minds – Therapist Website
 
-![Tranquil Minds Banner](https://react-client-site-template.vercel.app/og-image.png) <!-- Replace with your actual banner image if available -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/TusharGupta-Developer/react-dermatologist-site-template/main/public/Screenshot (393).png" alt="React Dermatologist Template Banner" width="100%" />
+</p>
+
 
 > **Live Demo:** [https://react-client-site-template.vercel.app/](https://react-client-site-template.vercel.app/)
 
@@ -8,7 +11,7 @@
 
 ## 🧠 About the Project
 
-**Tranquil Minds** is a modern, accessible, and responsive website designed specifically for therapists, psychologists, or mental health professionals who want to establish a warm and professional online presence.
+The **React Dermatologist Site Template** is a **highly reusable template** designed for dermatology clinics, skincare professionals, and healthcare providers. It allows developers to **build multiple professional websites quickly**, cutting development time by **80–90%** while maintaining clean, scalable code.  
 
 This project was **designed and developed by Tushar Gupta** to demonstrate expertise in building clean, scalable front-end applications using React.
 
