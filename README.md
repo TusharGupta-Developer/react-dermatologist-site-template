@@ -31,7 +31,7 @@ This project was **designed and developed by Tushar Gupta** to demonstrate exper
 - **React.js** – Frontend framework
 - **CSS3 (No Tailwind)** – Custom-designed responsive layout using CSS Variables
 - **EmailJS** – To handle contact form submissions
-- **Figma** – UI/UX planning and prototyping
+- **AI/ChatGPT** – UI/UX planning, prototyping and Development
 - **Vercel** – Hosting and deployment
 
 ---
@@ -47,20 +47,64 @@ This project was **designed and developed by Tushar Gupta** to demonstrate exper
 
 ---
 
-## 📂 Folder Structure
+# Project Architecture
 
+This repository is designed as a **React template** that makes building multiple websites faster and more maintainable.  
+It starts with a **lightweight, easy-to-use structure** but is also **fully upgradable** into a scalable architecture as the project grows.  
+
+---
+
+## 🏗 Current Architecture (Starter)
+
+```text
 src/
 │
-├── assets/ # Images and branding
-├── components/ # Reusable UI components
-│ ├── common/ # Shared UI blocks (buttons, titles)
-│ ├── layout/ # Header, Footer, etc.
-│ └── pages/ # Section-specific components
-├── config/ # siteConfig.js for theme and brand info
-├── styles/ # Global and component-level CSS
-├── App.jsx # Main component
-├── main.jsx # App entry point
-└── index.css # Base CSS + variables
+├── assets/         # Images and branding
+├── components/     # Reusable UI components
+│   ├── common/     # Shared UI blocks (buttons, titles)
+│   ├── layout/     # Header, Footer, etc.
+│   └── pages/      # Section-specific components
+├── config/         # siteConfig.js for theme and brand info
+├── styles/         # Global and component-level CSS
+├── App.jsx         # Main component
+├── main.jsx        # App entry point
+└── index.css       # Base CSS + variables
+```
+
+## 🚀 Upgradable Project Architecture
+
+The project follows a **scalable folder structure** that makes it easy to maintain, extend, and upgrade as the application grows.  
+
+```text
+src/
+│
+├── assets/               # Static resources like images, logos, and icons
+│
+├── components/           # Reusable UI building blocks
+│   ├── atoms/            # Smallest UI elements (buttons, inputs, labels)
+│   ├── molecules/        # Combination of atoms (cards, forms, modals)
+│   └── organisms/        # Complex sections (hero, navbar, footer)
+│
+├── features/             # Feature-based modules (e.g., authentication, blog, dashboard)
+│
+├── hooks/                # Custom React hooks for reusable logic
+│
+├── context/              # Context API for managing global state
+│
+├── services/             # API integrations, Firebase/Appwrite services, external data handling
+│
+├── utils/                # Helper functions (validators, formatters, calculations)
+│
+├── config/               # Global configuration (themes, routes, environment variables)
+│
+├── content/              # Static text, JSON, or markdown files for dynamic content
+│
+├── styles/               # Centralized styles (global CSS, variables, theme styles)
+│
+├── App.jsx               # Main application component
+├── main.jsx              # Entry point for rendering the React app
+└── index.css             # Base/global styles applied across the app
+```
 
 ---
 
